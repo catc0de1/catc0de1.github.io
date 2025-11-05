@@ -1,0 +1,139 @@
+/* project grid */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
+}
+
+/* card */
+.project-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* image */
+.project-image-container {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.05);
+}
+
+/* content */
+.project-content {
+  padding: 1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-content h3 {
+  color: var(--theme-color, #0000ff);
+  font-size: 1.25rem;
+  margin-bottom: 0.4rem;
+}
+
+.project-desc {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 0.8rem;
+}
+
+/* tech stack */
+.project-tech-group {
+  margin: 0.6rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.project-tech-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  padding: 0.3rem;
+  border-radius: 50%;
+  margin: 0.25rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-tech-item:hover {
+  transform: scale(1.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.project-tech-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+  display: block;
+}
+
+/* tablet (max 900px) */
+@media (max-width: 900px) {
+  .projects-container {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+
+  .project-image-container {
+    height: 160px;
+  }
+
+  .project-content h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* mobile (max 600px) */
+@media (max-width: 600px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+    margin: 2rem auto;
+    padding: 0.5rem;
+  }
+
+  .project-image-container {
+    height: 150px;
+  }
+
+  .project-content {
+    padding: 0.8rem 1rem;
+  }
+
+  .project-content h3 {
+    font-size: 1rem;
+  }
+
+  .project-desc {
+    font-size: 0.9rem;
+  }
+}

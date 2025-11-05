@@ -1,0 +1,8 @@
+{
+  "githubUsername": "catc0de1",
+  "githubProfileUrl": "https://github.com/catc0de1",
+  "siteTitle": "My GitHub Portfolio",
+  "subtitle": "A showcase of my repositories and creations",
+  "themeColor": "#0000ff",
+  "projectSource": "./data/projects.json"
+}

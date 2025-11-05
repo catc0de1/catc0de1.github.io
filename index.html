@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading...</title>
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/card.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
+
+  </head>
+  <body>
+    <header class="header-container">
+      <h1></h1>
+      <p class="subtitle"></p>
+    </header>
+
+    <main class="main-container">
+      <section id="projects" class="projects-container"></section>
+    </main>
+
+    <!-- modal -->
+    <div id="project-modal" class="modal">
+      <div class="modal-content">
+        <span id="modal-close">&times;</span>
+
+        <div class="modal-slider">
+          <div class="slider-track" id="modal-slider-track"></div>
+
+          <div class="slider-indicators" id="modal-indicators"></div>
+
+          <button class="slider-btn prev" id="modal-prev">&#10094;</button>
+          <button class="slider-btn next" id="modal-next">&#10095;</button>
+        </div>
+
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+        <div id="modal-meta"></div>
+      </div>
+    </div>
+
+    <!-- full image viewer -->
+    <div id="image-viewer" class="image-viewer">
+      <span id="viewer-close">&times;</span>
+      <img id="viewer-img" src="" alt="Full view" />
+    </div>
+
+    <footer>
+      <p>© 2025 <a href="#" target="_blank">GitHub</a></p>
+    </footer>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

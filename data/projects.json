@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Portfolio Website",
+    "description": "My personal portfolio as Informatic Engineering",
+    "fullDescription": "",
+    "techStack": [
+      { "name": "react" },
+      { "name": "tailwind" },
+      { "name": "vite" },
+      { "name": "ts" }
+    ],
+    "url": "https://github.com/catc0de1/portfolio",
+    "thumbnailImageIsLocal": true,
+    "thumbnailImage": "portfolio.webp",
+    "modalImages": [
+      { "modalImageIsLocal": true, "modalImage": "portfolio.webp" },
+      { "modalImageIsLocal": true, "modalImage": "my_diary.webp" },
+      { "modalImageIsLocal": true, "modalImage": "software_techs_portal.webp" }
+    ]
+  },
+  {
+    "name": "Surabaya BestPoint",
+    "description": "Directory Listing App, show all best point in Surabaya",
+    "fullDescription": "",
+    "techStack": [
+      { "name": "express" },
+      { "name": "mongodb" },
+      { "name": "mongoose" },
+      { "name": "ejs" },
+      { "name": "bootstrap" },
+      { "name": "js" }
+    ],
+    "url": "https://github.com/catc0de1/SurabayaBestPoint",
+    "thumbnailImage": "directory_listing_app.webp"
+  },
+  {
+    "name": "MYDiary",
+    "description": "Prortype desktop app, write diary safety on desktop",
+    "fullDescription": "",
+    "techStack": [
+      { "name": "tauri" },
+      { "name": "react" },
+      { "name": "sqlite" },
+      { "name": "rust" },
+      { "name": "ts" }
+    ],
+    "url": "https://github.com/catc0de1/MyDiary",
+    "thumbnailImage": "my_diary.webp"
+  },
+  {
+    "name": "Puri Ranilasem",
+    "description": "Gallery website, showcase product service of Make Up Artis of Puri RaniLasem",
+    "fullDescription": "",
+    "techStack": [
+      { "name": "react" },
+      { "name": "tailwind" },
+      { "name": "framer" },
+      { "name": "ts" }
+    ],
+    "url": "https://github.com/catc0de1/PuriRaniLasem",
+    "thumbnailImage": "puri_ranilasem.webp"
+  },
+  {
+    "name": "Bisa Enggress",
+    "description": "Android App, Practice english with AI chatbot",
+    "fullDescription": "",
+    "techStack": [
+      { "name": "react-native" },
+      { "name": "ts" }
+    ],
+    "url": "https://github.com/catc0de1/BisaEnggress",
+    "thumbnailImage": "bisa_enggress.webp"
+  },
+  {
+    "name": "Self Service Caffee",
+    "description": "Prortype Self Service App, automatic service in Lha Iki Kafe",
+    "fullDescription": "",
+    "techStack": [
+      { "name": "express" },
+      { "name": "mongodb" },
+      { "name": "mongoose" },
+      { "name": "ejs" },
+      { "name": "sass" },
+      { "name": "webpack" },
+      { "name": "js" }
+    ],
+    "url": "https://github.com/catc0de1/LhaIkiKafe",
+    "thumbnailImage": "self_service.webp"
+  },
+  {
+    "name": "Ztack Dev",
+    "description": "Blogsite, content of technologies, news, best practice, and other related",
+    "fullDescription": "",
+    "techStack": [
+      { "name": "astro" },
+      { "name": "bootstrap" },
+      { "name": "ts" }
+    ],
+    "url": "https://github.com/catc0de1/ZtackDev",
+    "thumbnailImage": "software_techs_portal.webp"
+  }
+]
