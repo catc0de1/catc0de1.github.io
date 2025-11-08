@@ -1,0 +1,1 @@
+export const defaultImage = "https://plus.unsplash.com/premium_photo-1720287601920-ee8c503af775?auto=format&fit=crop&q=60&w=500";

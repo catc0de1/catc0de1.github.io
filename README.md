@@ -303,7 +303,7 @@ This website is recommended to be deployed on **GitHub Pages**.
    |Webpack|webpack|
    |Yarn|yarn|
 
-   You can add custom technologies in `./components/techBranc.js`
+   You can add custom technologies in `./src/utils/techBranc.js`
 
    </br>
 

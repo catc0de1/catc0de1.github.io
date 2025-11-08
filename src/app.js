@@ -1,4 +1,4 @@
-import { createProjectCard } from "./components/projectCard.js";
+import { projectCard } from "./components/projectCard.js";
 
 async function loadConfig() {
   try {
@@ -22,7 +22,7 @@ async function loadProjects(config) {
       const projects = await res.json();
       
       projects.forEach((project) => {
-        const card = createProjectCard(project);
+        const card = projectCard(project);
         container.appendChild(card);
       });
     } catch (err) {

@@ -1,17 +1,7 @@
-/**
- * test.config.js
- * ----------------------------------
- * Script to validate `config.json` and `projects.json`
- * Run using:
- *   npm run test
- * or
- *   pnpm test
- */
-
 import fs from "fs";
-import { colors } from "./configs/colors.js";
+import { colors } from "./colors.js";
 
-const CONFIG_PATH = "./config.json";
+const CONFIG_PATH = "./data/config.json";
 const PROJECTS_PATH = "./data/projects.json";
 
 function logSuccess(message) {

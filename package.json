@@ -4,7 +4,7 @@
   "description": "A Template GitHub Portfolio Website with GitHub API intergrated using Pure HTML, CSS, JS. Write code is not needed (except if you want customize), just fill up JSON file to fill the the portfolio data",
   "main": "index.js",
   "scripts": {
-    "test": "node test.config.js"
+    "test": "node ./configs/test.config.js"
   },
   "keywords": [],
   "author": "catc0de1",
