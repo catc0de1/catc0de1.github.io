@@ -2,7 +2,7 @@ import { createProjectCard } from "./components/projectCard.js";
 
 async function loadConfig() {
   try {
-    const res = await fetch("./config.json");
+    const res = await fetch("./data/config.json");
     if (!res.ok) throw new Error("Failed to load config.json");
     const config = await res.json();
     return config;
