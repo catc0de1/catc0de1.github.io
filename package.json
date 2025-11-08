@@ -1,13 +1,13 @@
 {
-  "name": "github-portfolio",
+  "name": "github-portfolio-template",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Template GitHub Portfolio Website with GitHub API intergrated using Pure HTML, CSS, JS. Write code is not needed (except if you want customize), just fill up JSON file to fill the the portfolio data",
   "main": "index.js",
   "scripts": {
     "test": "node test.config.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "catc0de1",
+  "license": "MIT",
   "packageManager": "pnpm@10.16.1"
 }
