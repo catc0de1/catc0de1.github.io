@@ -85,21 +85,43 @@ export function projectModal(project) {
   projectSlider(modal, sliderTrack);
 
   const scrollContainer = modal.querySelector(".modal-scroll");
-const scrollProgress = modal.querySelector(".modal-scroll-progress");
 
-scrollContainer.addEventListener("scroll", () => {
-  const scrollTop = scrollContainer.scrollTop;
-  const scrollHeight = scrollContainer.scrollHeight - scrollContainer.clientHeight;
-  const scrolled = (scrollTop / scrollHeight) * 100;
-  scrollProgress.style.width = `${scrolled}%`;
-});
+  if (scrollContainer) scrollContainer.scrollTo({ top: 0, behavior: "instant" });
 
-  document.getElementById("modal-close").onclick = () => {
+  const scrollProgress = modal.querySelector(".modal-scroll-progress");
+
+  scrollContainer.addEventListener("scroll", () => {
+    const scrollTop = scrollContainer.scrollTop;
+    const scrollHeight = scrollContainer.scrollHeight - scrollContainer.clientHeight;
+    const scrolled = (scrollTop / scrollHeight) * 100;
+    scrollProgress.style.width = `${scrolled}%`;
+  });
+
+  function closeModal() {
     modal.style.display = "none";
     document.body.classList.remove("modal-open");
+
+    modal.onclick = null;
+
     if (typeof modal._projectSliderCleanup === "function") {
-      modal._projectSliderCleanup();
+      try {
+        modal._projectSliderCleanup();
+      } catch (err) {
+        console.warn("Error running slider cleanup:", err);
+      }
     }
+  }
+
+  const closeButton = modal.querySelector("#modal-close");
+  if (closeButton) {
+    closeButton.onclick = (e) => {
+      e.stopPropagation();
+      closeModal();
+    };
+  }
+
+  modal.onclick = (e) => {
+    if (e.target === modal) closeModal();
   };
 
   modal.onclick = (e) => {
@@ -114,6 +136,4 @@ scrollContainer.addEventListener("scroll", () => {
       modal.style.display = "none";
       document.body.classList.remove("modal-open");
     };
-
-    document.getElementById("modal-close").onclick = () => doClose();
   };}
