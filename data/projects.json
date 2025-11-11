@@ -2,9 +2,9 @@
   {
     "name": "Portfolio Website",
     "description": "My personal portfolio as Informatic Engineering",
-    "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque reprehenderit ipsam qui nesciunt excepturi, ad explicabo iste dolores facilis sequi, ipsa esse unde illum commodi. Eum error quis rem sint reprehenderit, optio autem facere, animi iure nulla tempore! Saepe dolorem rerum, numquam, eum vero vel nam eaque libero animi deserunt quam! Impedit, natus. Modi, porro repudiandae ducimus architecto laborum nisi, alias ab error veniam eos possimus est minus! Tempora maxime sed accusantium nobis nemo. Cupiditate recusandae debitis accusantium officiis mollitia, ducimus consectetur accusamus unde ut corrupti facere obcaecati, veniam ipsam dolor porro inventore impedit! Asperiores consectetur quibusdam perferendis impedit unde.",
-    "projectUrl": "https://github.com/catc0de1/portfolio",
-    "productUrl": "https://iyan-zuli-armanda.netlify.app",
+    "fullDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus enim minima nulla, quo voluptatibus repellat maxime dolor culpa expedita quam!",
+    "projectUrl": "https://github.com/catc0de1/example",
+    "productUrl": "https://example.com",
     "field": "Website",
     "status": "COMPLETED",
     "techStack": [
@@ -13,103 +13,79 @@
       { "name": "vite" },
       { "name": "ts" }
     ],
-    "thumbnailImage": "portfolio.webp",
+    "thumbnailImage": "portfolite1.webp",
     "thumbnailImageAlt": "Start page of my portfolio website",
     "modalImages": [
       {
-        "fileName": "portfolio.webp",
-        "alt": ""
+        "fileName": "portfolite1.webp",
+        "alt": "Portfolio web preview of hero section"
       },
       { 
-        "fileName": "my_diary.webp",
-        "alt": ""
-      },
-      { 
-        "fileName": "software_techs_portal.webp",
-        "alt": ""
+        "fileName": "portfolite2.webp",
+        "alt": "Portfolio web preview of review section"
       }
     ]
   },
   {
-    "name": "Surabaya BestPoint",
+    "name": "Discord",
     "description": "Directory Listing App, show all best point in Surabaya",
-    "fullDescription": "",
-    "projectUrl": "https://github.com/catc0de1/SurabayaBestPoint",
-    "productUrl": "",
+    "fullDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus enim minima nulla, quo voluptatibus repellat maxime dolor culpa expedita quam!",
+    "projectUrl": "https://github.com/catc0de1/example",
+    "productUrl": "https://example.com",
+    "field": "Cross Platform App",
+    "status": "COMPLETED",
     "techStack": [
-      { "name": "express" },
-      { "name": "mongodb" },
-      { "name": "mongoose" },
-      { "name": "ejs" },
-      { "name": "bootstrap" },
-      { "name": "js" }
-    ],
-    "thumbnailImage": "directory_listing_app.webp"
-  },
-  {
-    "name": "MYDiary",
-    "description": "Prortype desktop app, write diary safety on desktop",
-    "fullDescription": "",
-    "url": "https://github.com/catc0de1/MyDiary",
-    "techStack": [
-      { "name": "tauri" },
+      { "name": "electron" },
       { "name": "react" },
-      { "name": "sqlite" },
+      { "name": "mongodb" },
+      { "name": "redis" },
       { "name": "rust" },
+      { "name": "cpp" },
+      { "name": "py" },
       { "name": "ts" }
     ],
-    "thumbnailImage": "my_diary.webp"
+    "thumbnailImage": "discord.jpeg",
+    "thumbnailImageAlt": "Official Discord App Logo",
+    "modalImages": [
+      {
+        "fileName": "discord1.jpeg"
+      },
+      { 
+        "fileName": "discord2.jpeg"
+      },
+      { 
+        "fileName": "discord3.jpeg"
+      }
+    ]
   },
   {
-    "name": "Puri Ranilasem",
-    "description": "Gallery website, showcase product service of Make Up Artis of Puri RaniLasem",
-    "fullDescription": "",
-    "url": "https://github.com/catc0de1/PuriRaniLasem",
-    "techStack": [
-      { "name": "react" },
-      { "name": "tailwind" },
-      { "name": "framer" },
-      { "name": "ts" }
-    ],
-    "thumbnailImage": "puri_ranilasem.webp"
-  },
-  {
-    "name": "Bisa Enggress",
-    "description": "Android App, Practice english with AI chatbot",
-    "fullDescription": "",
-    "url": "https://github.com/catc0de1/BisaEnggress",
-    "techStack": [
-      { "name": "react-native" },
-      { "name": "ts" }
-    ],
-    "thumbnailImage": "bisa_enggress.webp"
-  },
-  {
-    "name": "Self Service Caffee",
-    "description": "Prortype Self Service App, automatic service in Lha Iki Kafe",
-    "fullDescription": "",
-    "url": "https://github.com/catc0de1/LhaIkiKafe",
+    "name": "Email API Server",
+    "description": "Prortype of SMTP Email API Server",
+    "fullDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus enim minima nulla, quo voluptatibus repellat maxime dolor culpa expedita quam!",
+    "projectUrl": "https://github.com/catc0de1/example",
+    "productUrl": "https://example.com",
+    "field": "Website",
+    "status": "COMPLETED",
     "techStack": [
       { "name": "express" },
-      { "name": "mongodb" },
-      { "name": "mongoose" },
-      { "name": "ejs" },
-      { "name": "sass" },
-      { "name": "webpack" },
-      { "name": "js" }
-    ],
-    "thumbnailImage": "self_service.webp"
+      { "name": "hbs" },
+      { "name": "ts" }
+    ]
   },
   {
-    "name": "Ztack Dev",
-    "description": "Blogsite, content of technologies, news, best practice, and other related",
-    "fullDescription": "",
-    "url": "https://github.com/catc0de1/ZtackDev",
+    "name": "GitHub Portfolio Template",
+    "description": "Open Source GitHub portfolio template, ready to use and no need coding",
+    "fullDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus enim minima nulla, quo voluptatibus repellat maxime dolor culpa expedita quam!",
+    "projectUrl": "https://github.com/catc0de1/github-portfolio-api-template",
+    "productUrl": "https://example.com",
+    "field": "Open Source Template",
+    "status": "ON PROGRESS",
     "techStack": [
-      { "name": "astro" },
-      { "name": "bootstrap" },
-      { "name": "ts" }
+      { "name": "html" },
+      { "name": "css" },
+      { "name": "js" },
+      { "name": "github" }
     ],
-    "thumbnailImage": "software_techs_portal.webp"
+    "thumbnailImage": "gp7.png"
   }
 ]
