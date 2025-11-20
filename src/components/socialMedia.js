@@ -10,12 +10,14 @@ export function renderSocialMedia(list = []) {
     if (!item.url || !item.name) return;
 
     const brand = socialBrand[item.name.toLowerCase()];
-    const link = document.createElement("a");
 
+    const wrapper = document.createElement("div");
+    wrapper.className = "social-media-wrapper";
+
+    const link = document.createElement("a");
     link.href = item.url;
     link.target = "_blank";
     link.rel = "noopener";
-
     link.className = "social-media-item";
 
     if (brand) {
@@ -26,7 +28,8 @@ export function renderSocialMedia(list = []) {
       link.textContent = item.name;
     }
 
-    container.appendChild(link);
+    wrapper.appendChild(link);
+    container.appendChild(wrapper);
   });
 
   document.body.appendChild(container);

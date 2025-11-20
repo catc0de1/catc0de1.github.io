@@ -14,31 +14,40 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-.social-media-item {
+.social-media-wrapper {
+  width: 45px;
+  height: 45px;
+
   display: flex;
   align-items: center;
   justify-content: center;
 
+  transition: transform 0.25s ease;
+}
+
+.social-media-item {
   width: 35px;
   height: 35px;
 
   border-radius: 12px;
   padding: 8px;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   background-color: var(--theme-color, #0000FF);
   color: white;
 
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  transition: transform 0.25s ease;
+}
+
+.social-media-wrapper:hover .social-media-item {
+  transform: translateX(12px);
 }
 
 .social-media-item svg {
   width: 24px;
   height: 24px;
   fill: white;
-}
-
-/* hover effect */
-.social-media-item:hover {
-  transform: translateX(1rem);
-  /* opacity: 0.6; */
 }
