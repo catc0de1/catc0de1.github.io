@@ -2,6 +2,7 @@ import { githubProfile } from "./components/githubProfile.js";
 import { projectCard } from "./components/projectCard.js";
 import { subRepoCard } from "./components/subRepoCard.js";
 import { renderSocialMedia } from "./components/socialMedia.js";
+import { initBackToTop } from "./components/backToTop.js";
 
 async function loadConfig() {
   try {
@@ -83,6 +84,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   applyConfigToUI(config);
   githubProfile(config.githubUsername, config.githubUrl)
   loadProjects(config);
-  loadSubRepos();
   renderSocialMedia(config.socialMedia);
+  loadSubRepos();
+  initBackToTop();
 });

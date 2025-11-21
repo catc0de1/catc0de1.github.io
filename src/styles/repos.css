@@ -2,7 +2,6 @@
   margin-top: 3rem;
 }
 
-/* ===== Sub Repo Grid Layout ===== */
 .sub-repo-container {
   display: flex;
   flex-direction: column;
@@ -14,32 +13,29 @@
   max-width: 925px;
 }
 
-/* ===== Sub Repo Card Styling ===== */
 .sub-repo-card {
   width: 100%;
   background: white;
   padding: 0.1rem 1.2rem 1rem 1.2rem;
   border-radius: 14px;
   box-shadow: 0 4px 14px rgba(0,0,0,0.1);
-  border-left: 1rem solid transparent; /* default: tidak terlihat */
+  border-left: 1rem solid transparent;
   transition: 
     transform 0.25s ease,
     box-shadow 0.25s ease,
-    border-left-color 0.25s ease;      /* animasi border */
+    border-left-color 0.25s ease;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
 
-/* Hover: angkat card + tampilkan border kiri */
 .sub-repo-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   border-left-color: var(--theme-color);
 }
 
-/* ===== Title & Description ===== */
 .sub-repo-card h3 {
   font-size: 1.5rem;
   margin-bottom: -0.25rem;
@@ -51,23 +47,21 @@
   margin-bottom: 0.8rem;
 }
 
-/* ===== Link Hidden State ===== */
 .sub-repo-card a {
   color: var(--theme-color, #0000FF);
   font-weight: 600;
   align-self: flex-end;
 
   opacity: 0;
-  transform: translateX(-8px);  /* sedikit ke kiri dulu */
+  transform: translateX(-8px);
   transition: opacity 0.25s ease, transform 0.25s ease;
-  pointer-events: none;         /* tidak bisa diklik saat invisible */
+  pointer-events: none;
 }
 
-/* ===== Link Saat Hover Card ===== */
 .sub-repo-card:hover a {
   opacity: 1;
   transform: translateX(0);
-  pointer-events: auto;     /* aktif kembali */
+  pointer-events: auto;
 }
 
 @media (max-width: 640px) {
