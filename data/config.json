@@ -4,7 +4,8 @@
   "webTitle": "GitHub Portfolio - catc0de1",
   "title": "Hi, I'm catc0de1",
   "subtitle": "I'm an Informatic Engineer As Fullstack Software Developer",
-  "themeColor": "#0000FF",
+  "lightThemeColor": "#0000FF",
+  "darkThemeColor": "#BB86FC",
   "useLocalJson": true,
   "email": "youremail@example.com",
   "socialMedia": [
@@ -19,6 +20,18 @@
     {
       "name": "dc",
       "url": "your_dc"
+    },
+    {
+      "name": "fb",
+      "url": "your_fb"
+    },
+    {
+      "name": "x",
+      "url": "your_x"
+    },
+    {
+      "name": "wa",
+      "url": "your_wa"
     }
   ]
 }

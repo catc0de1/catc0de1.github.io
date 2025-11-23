@@ -21,7 +21,7 @@ export function projectCard(project) {
         return `<span class="project-tech-item unknown">${t.name}</span>`;
       }
       return `
-        <span class="project-tech-item" style="background: ${tech.color};" title="${tech.name}">
+        <span class="project-tech-item" title="${tech.name}">
           <span class="project-tech-icon">${tech.svg}</span>
         </span>
       `;

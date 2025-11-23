@@ -118,7 +118,7 @@ This website is recommended to be deployed on **GitHub Pages**.
    |webTitle|website tilte|Optional|String|
    |title|Main title of the GitHub Portfolio|Optional|String|
    |subtitle|Sub title of the GitHub Portfolio|Optional|String|
-   |themeColor|Website theme color|Optional (Default: `#0000FF`)|String, (CSS color format)|
+   |lightThemeColor|Website theme color|Optional (Default: `#0000FF`)|String, (CSS color format)|
    |useLocalJson|Set to true to read data from local JSON|Optional (Default: `true`)|Boolean|
    |email|Your contact email|Recommended|string (email)|
    |socialMedia|List of your social media accounts|Optional|Array of Objects|
@@ -133,7 +133,7 @@ This website is recommended to be deployed on **GitHub Pages**.
       "webTitle": "GitHub Portfolio - catc0de1",
       "title": "My GitHub Portfolio",
       "subtitle": "A showcase of my repositories and creations",
-      "themeColor": "#0000ff",
+      "lightThemeColor": "#0000ff",
       "useLocalJson": true,
       "email": "youremail@example.com",
       "socialMedia": [

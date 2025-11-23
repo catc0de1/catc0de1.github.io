@@ -22,7 +22,7 @@ export function renderSocialMedia(list = []) {
 
     if (brand) {
       link.innerHTML = brand.svg;
-      link.style.backgroundColor = brand.color;
+      link.style.background = brand.color;
       link.title = brand.name;
     } else {
       link.textContent = item.name;

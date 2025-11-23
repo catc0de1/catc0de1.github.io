@@ -3,6 +3,7 @@ import { projectCard } from "./components/projectCard.js";
 import { subRepoCard } from "./components/subRepoCard.js";
 import { renderSocialMedia } from "./components/socialMedia.js";
 import { initBackToTop } from "./components/backToTop.js";
+import { initThemeSwitch } from "./components/themeSwitch.js";
 
 async function loadConfig() {
   try {
@@ -40,7 +41,7 @@ async function loadSubRepos() {
 
   try {
     const res = await fetch("./data/repos.json");
-    if (!res.ok) return; // optional
+    if (!res.ok) return;
 
     const subRepos = await res.json();
 
@@ -65,16 +66,6 @@ function applyConfigToUI(config) {
   document.querySelector(".subtitle").textContent = config.subtitle;
 
   document.querySelector("footer a").href = config.githubUrl;
-
-  const color = config.themeColor;
-  if (color && typeof color === "string" && CSS.supports("color", color)) {    
-    document.documentElement.style.setProperty("--theme-color", color);
-    document.querySelectorAll("a, h3").forEach((el) => {
-      el.style.color = color;
-    });
-  } else {
-    document.documentElement.style.setProperty("--theme-color", "#0000FF");
-  }
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -87,4 +78,5 @@ document.addEventListener("DOMContentLoaded", async () => {
   renderSocialMedia(config.socialMedia);
   loadSubRepos();
   initBackToTop();
+  initThemeSwitch(config.lightThemeColor, config.darkThemeColor);
 });

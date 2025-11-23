@@ -12,14 +12,12 @@
 /* modal box */
 .modal-content {
   position: relative;
-  background-color: #fff;
-  /* border-radius: 12px; */
+  background-color: var(--secondary-bg-color);
   max-width: 1200px;
   width: 90%;
   max-height: 90vh;
-  /* overflow-y: auto; */
   overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-lg);
   position: relative;
   animation: fadeInUp 0.3s ease;
 }
@@ -27,11 +25,11 @@
 .modal-header {
   position: sticky;
   top: 0;
-  background: #fff;
+  background-color: var(--secondary-bg-color);
   z-index: 2;
   padding: 1rem 1.5rem 0.5rem;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  border-bottom: 1px solid #eee;
+  box-shadow: var(--shadow-md);
+  border-bottom: 1px solid var(--accent-color);
   display: flex;
   justify-content: center;
 }
@@ -69,14 +67,13 @@
 }
 
 #modal-project-info div span {
-  color: #555
+  color: var(--secondary-text-color)
 }
 
 #modal-project-status {
-  background-color: #eee;
-  color: var(--theme-color, #0000FF);
+  background-color: var(--accent-color);
+  color: var(--theme-color);
   padding: 4px 16px;
-  /* border: 2px solid blue; */
   border-radius: 50px;
 }
 
@@ -84,13 +81,7 @@
   width: 50%;
 }
 
-/* .modal-body-header-container #modal-status {
-.modal-body-header-container #modal-tech-stack {
-  flex-basis: 50%;
-} */
-
 #modal-title {
-  /* font-size: 40px; */
   font-weight: bold;
 }
 
@@ -104,8 +95,8 @@
   position: sticky;
   bottom: 0;
   padding: 0.8rem;
-  background: #FFFFFF;
-  border-top: 2px solid #eee;
+  background-color: var(--secondary-bg-color);
+  border-top: 2px solid var(--accent-color);
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
@@ -119,7 +110,6 @@
   justify-content: center;
   align-items: center;
   padding: 0.5rem 1rem;
-  /* border-radius: 6px; */
   transition: all 0.2s ease;
   text-decoration: none;
 }
@@ -128,9 +118,6 @@
   gap: 1rem;
   background-color: white;
   border: 2px solid #181717;
-}
-
-.modal-link-project span {
   color: #181717;
 }
 
@@ -140,35 +127,20 @@
   fill: #181717;
 }
 
-.modal-link-project:hover {
-  background-color: #181717;
-  text-decoration: none; 
-}
-
-.modal-link-project:hover span {
-  color: white;
-}
-
-.modal-link-project:hover svg {
-  fill: white;
-}
-
 .modal-link-project:active {
-  background-color: #484747;
-  border: 2px solid #484747;
-  text-decoration: none; 
+  background-color:  var(--github-modal-link-active);
 }
 
 .modal-link-product {
   gap: 1rem;
   color: white;
   background-color: #181717;
+  border: 2px solid white;
   text-decoration: none; 
 }
 
 .modal-link-product:active {
-  background-color: #484747;
-  text-decoration: none; 
+  background-color: rgba(0, 0, 0, 0.70);
 }
 
 body.modal-open {
@@ -192,13 +164,10 @@ body.modal-open {
 .modal-scroll-indicator {
   position: absolute;
   top: 0;
-  /* bottom: 65px; */
-  /* bottom: 0; */
   left: 0;
   width: 100%;
   height: 5px;
   background-color: rgba(0,0,0,0.05);
-  /* border-radius: 0 0 6px 6px; */
   overflow: hidden;
   z-index: 5;
 }
@@ -206,18 +175,16 @@ body.modal-open {
 .modal-scroll-progress {
   width: 0%;
   height: 100%;
-  background-color: var(--theme-color, #0000ff);
+  background-color: var(--theme-color);
   transition: width 0.5s ease-out;
 }
 
 
 /* slider */
 .modal-slider-title {
-  color: black;
+  color: var(--main-text-color);
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  /* margin-left: 4rem; */
-  /* align-self: start; */
 }
 
 .modal-slider-container {
@@ -226,14 +193,12 @@ body.modal-open {
   justify-content: center;
   gap: 1rem;
   width: 100%;
-  /* margin-bottom: 2rem; */
 }
 
 .modal-slider {
   position: relative;
   width: 90%;
   overflow: hidden;
-  /* border-radius: 8px; */
   margin-bottom: 1rem;
 }
 
@@ -245,10 +210,8 @@ body.modal-open {
 .slider-track img {
   width: 100%;
   min-width: 100%;
-  /* max-height: 450px; */
   height: 534px;
   object-fit: cover;
-  /* border-radius: 8px; */
   flex-shrink: 0;
 }
 
@@ -257,10 +220,9 @@ body.modal-open {
   bottom: 0;
   left: 0;
   height: 4px;
-  background-color: var(--theme-color, #0000ff);
+  background-color: var(--theme-color);
   width: 0%;
   transition: width 5s linear;
-  /* border-radius: 0 0 8px 8px; */
 }
 
 .slider-btn {
@@ -298,7 +260,7 @@ body.modal-open {
 }
 
 .indicator-dot.active {
-  background-color: var(--theme-color, #0000ff);
+  background-color: var(--theme-color);
   transform: scale(1.2);
 }
 
@@ -329,27 +291,16 @@ body.modal-open {
   border-radius: 8px;
   margin: 0.25rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-}
-
-.modal-tech-name {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0.25rem;
+  border: 1.5px solid var(--hover-color);
+  box-shadow: 0 0 5px var(--hover-color);
   font-weight: bold;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: var(--main-text-color);
+  text-decoration: none;
 }
 
 .modal-tech-item:hover {
-  box-shadow: 0 0 10px var(--hover-color);
-}
-
-.modal-tech-icon svg {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-  display: block;
+  box-shadow: 0 0 15px var(--hover-color);
+  text-decoration: none;
 }
 
 /* Close button */
@@ -358,7 +309,7 @@ body.modal-open {
   top: 1rem;
   right: 1rem;
   font-size: 1.6rem;
-  color: #333;
+  color: var(--secondary-text-color);
   cursor: pointer;
   transition: color 0.2s;
 }

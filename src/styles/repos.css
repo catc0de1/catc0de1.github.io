@@ -15,10 +15,10 @@
 
 .sub-repo-card {
   width: 100%;
-  background: white;
+  background-color: var(--secondary-bg-color);
   padding: 0.1rem 1.2rem 1rem 1.2rem;
   border-radius: 14px;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  box-shadow: var(--shadow-md);
   border-left: 1rem solid transparent;
   transition: 
     transform 0.25s ease,
@@ -32,7 +32,7 @@
 
 .sub-repo-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: var(--shadow-lg);
   border-left-color: var(--theme-color);
 }
 
@@ -48,7 +48,7 @@
 }
 
 .sub-repo-card a {
-  color: var(--theme-color, #0000FF);
+  color: var(--theme-color);
   font-weight: 600;
   align-self: flex-end;
 

@@ -11,9 +11,9 @@
 
 /* card */
 .project-card {
-  background-color: #fff;
+  background-color: var(--secondary-bg-color);
   border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--shadow-md);
   overflow: hidden;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   display: flex;
@@ -22,7 +22,7 @@
 
 .project-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--shadow-lg);
 }
 
 /* image */
@@ -52,14 +52,14 @@
 }
 
 .project-content h3 {
-  color: var(--theme-color, #0000ff);
+  color: var(--theme-color);
   font-size: 1.25rem;
   margin-bottom: 0.4rem;
 }
 
 .project-desc {
   font-size: 0.95rem;
-  color: #555;
+  color: var(--secondary-text-color);
   line-height: 1.4;
   margin-bottom: 0.8rem;
 }
@@ -78,21 +78,17 @@
   justify-content: center;
   width: 25px;
   height: 25px;
-  padding: 0.3rem;
-  border-radius: 50%;
   margin: 0.25rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-tech-item:hover {
   transform: scale(1.5);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 .project-tech-icon svg {
-  width: 20px;
-  height: 20px;
-  fill: white;
+  width: 30px;
+  height: 30px;
   display: block;
 }
 

@@ -9,9 +9,9 @@
   gap: 12px;
   z-index: 5;
   padding: 20px 10px;
-  background: white;
+  background-color: var(--secondary-bg-color);
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--shadow-md);
 }
 
 .social-media-wrapper {
@@ -36,9 +36,6 @@
   align-items: center;
   justify-content: center;
 
-  background-color: var(--theme-color, #0000FF);
-  color: white;
-
   transition: transform 0.25s ease;
 }
 
@@ -49,5 +46,4 @@
 .social-media-item svg {
   width: 24px;
   height: 24px;
-  fill: white;
 }

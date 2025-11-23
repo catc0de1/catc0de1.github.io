@@ -36,14 +36,16 @@ export function projectModal(project) {
         return `<span class="project-tech-item unknown">${t.name}</span>`;
       }
       return `
-        <span 
+        <a
+          href="${tech.url}"
+          target="_blank"
+          rel="noopener"
           class="modal-tech-item" 
-          style="--hover-color: ${tech.color}; border: 1px solid ${tech.color};"
+          style="--hover-color: ${tech.color};"
           title="${tech.name}"
         >
-          <span class="modal-tech-icon" style="color: ${tech.color};">${tech.svg}</span>
-          <span class="modal-tech-name" style="color: ${tech.color};">${tech.name}</span>
-        </span>
+          ${tech.name}
+        </a>
       `;
     }).join("")
     : `<span>Unknown</span>`;
