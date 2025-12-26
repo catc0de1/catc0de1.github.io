@@ -70,3 +70,9 @@
 .theme-switch input:checked + .slider::before {
   transform: translateX(24px);
 }
+
+@media (max-width: 600px) {
+  .theme-switch-wrapper {
+    right: 20px;
+  }
+}

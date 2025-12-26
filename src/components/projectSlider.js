@@ -15,7 +15,15 @@ export function projectSlider(modal, sliderTrack) {
   let autoSlideTimer = null;
   const slideDuration = 5000;
 
-  if (totalSlides <= 1) {
+  if (totalSlides === 0) {
+    prevBtn.style.display = "none";
+    nextBtn.style.display = "none";
+    indicatorsContainer.style.display = "none";
+    
+    const progressBar = sliderTrack.parentElement.querySelector(".slider-progress");
+    if (progressBar) progressBar.style.display = "none";
+    return;
+  } else if (totalSlides <= 1) {
     prevBtn.style.display = "none";
     nextBtn.style.display = "none";
     indicatorsContainer.style.display = "none";

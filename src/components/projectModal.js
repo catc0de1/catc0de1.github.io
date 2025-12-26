@@ -1,5 +1,4 @@
 import { projectSlider } from "./projectSlider.js";
-import { defaultImage } from "../utils/defaultImage.js";
 import { techBrand } from "../utils/techBrand.js";
 
 export function projectModal(project) {
@@ -8,6 +7,9 @@ export function projectModal(project) {
   const modalTitle = document.getElementById("modal-title");
   const modalDescription = document.getElementById("modal-description");
   const modalTechStack = document.getElementById("modal-tech-stack");
+  const modalSliderTitle = document.getElementById("modal-slider-title");
+  const sliderContainer = document.getElementById("modal-slider-container");
+  const indicators = document.getElementById("modal-indicators");
 
   if (Array.isArray(project.modalImages) && project.modalImages.length > 0) {
     sliderTrack.innerHTML = project.modalImages
@@ -17,12 +19,16 @@ export function projectModal(project) {
         return `<img src="${src}" alt="${alt} preview" />`;
       })
       .join("");
+
+    modalSliderTitle.style.display = "";
+    sliderContainer.style.display = "";
+    indicators.style.display = "";
   } else {
-    const fallback = project.thumbnailImage
-      ? `./images/${project.thumbnailImage}`
-      : `${defaultImage}`;
-    const alt = project.thumbnailImageAlt || project.name;
-    sliderTrack.innerHTML = `<img src="${fallback}" alt="${alt}" />`;
+    sliderTrack.innerHTML = "";
+
+    modalSliderTitle.style.display = "none";
+    sliderContainer.style.display = "none";
+    indicators.style.display = "none";
   }
 
   modalTitle.textContent = project.name;

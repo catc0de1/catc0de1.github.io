@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -68,4 +69,31 @@
 
 #githubLink:active a {
   background-color: var(--github-link-active);
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  #github-avatar {
+    width: 150px;
+    height: 150px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .hero-text .subtitle {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  #githubLink {
+    width: 100%;
+    justify-content: center;
+  }
 }
