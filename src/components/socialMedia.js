@@ -6,6 +6,24 @@ export function renderSocialMedia(list = []) {
   const container = document.createElement("div");
   container.className = "social-media-fixed";
 
+  const toggle = document.createElement("button");
+  toggle.className = "social-media-toggle";
+  toggle.innerHTML = "&#9776;";
+
+  let isAnimating = false;
+  toggle.addEventListener("click", () => {
+    if (isAnimating) return;
+
+    isAnimating = true;
+    container.classList.toggle("expanded");
+
+    setTimeout(() => {
+      isAnimating = false;
+    }, 300);
+  });
+
+  container.appendChild(toggle);
+
   list.forEach((item) => {
     if (!item.url || !item.name) return;
 
@@ -27,6 +45,10 @@ export function renderSocialMedia(list = []) {
     } else {
       link.textContent = item.name;
     }
+
+    link.addEventListener("click", () => {
+      container.classList.remove("expanded");
+    });
 
     wrapper.appendChild(link);
     container.appendChild(wrapper);
