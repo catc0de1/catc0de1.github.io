@@ -8,13 +8,11 @@ import { initThemeSwitch } from "./components/themeSwitch.js";
 async function loadConfig() {
   try {
     const res = await fetch("./data/config.json");
-    if (!res.ok) throw new Error("Failed to load config.json");
     const config = await res.json();
     return config;
   } catch (err) {
     console.error("Error loading config:", err);
-    alert("Cannot load config.json — please check your server or path.");
-    return null;
+    alert("Cannot load config.json, please check your server or path.");
   }
 }
 
@@ -31,26 +29,53 @@ async function loadProjects(config) {
         container.appendChild(card);
       });
     } catch (err) {
-      container.innerHTML = `<p style="color:red;">Error loading local projects: ${err.message}</p>`;
+      console.error("Error loading projects:", err);
+      container.innerHTML = `<p style="color:red;">Error loading projects: ${err.message}</p>`;
     }
   }
 }
 
 async function loadSubRepos() {
-  const container = document.getElementById("sub-repos");
+  const container = document.getElementById("subRepos");
+  const header = document.getElementById("subReposHeader");
+
+  const hideSection = () => {
+    if (container) container.style.display = "none";
+    if (header) header.style.display = "none";
+  };
 
   try {
     const res = await fetch("./data/repos.json");
-    if (!res.ok) return;
+    if (res.status === 404) {
+      hideSection();
+      console.warn(
+        "No repos.json found, skipping sub repos section.",
+        "If you want to silent this log, create a repos.json file in the data folder then fill `[]`."
+      );
+      return
+    };
 
-    const subRepos = await res.json();
+    const data = await res.text();
+
+    if (!data || data.trim().length === 0) {
+      hideSection();
+      return;
+    }
+
+    const subRepos = JSON.parse(data);
+
+    if (!Array.isArray(subRepos) || subRepos.length === 0) {
+      hideSection();
+      return;
+    }
 
     subRepos.forEach((item) => {
       const card = subRepoCard(item);
       container.appendChild(card);
     });
   } catch (err) {
-    console.error("Error loading sub repos:", err);
+    console.error("Error loading sub-repos:", err);
+    hideSection();
   }
 }
 

@@ -1,5 +1,3 @@
-// src/components/subRepoCard.js
-
 export function subRepoCard(item) {
   const card = document.createElement("div");
   card.className = "sub-repo-card";
