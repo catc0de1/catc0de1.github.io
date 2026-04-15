@@ -16,18 +16,6 @@
     {
       "name": "dc",
       "url": "https://your_dc"
-    },
-    {
-      "name": "fb",
-      "url": "https://your_fb"
-    },
-    {
-      "name": "x",
-      "url": "https://your_x"
-    },
-    {
-      "name": "wa",
-      "url": "https://your_wa"
     }
   ]
 }

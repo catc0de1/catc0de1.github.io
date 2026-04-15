@@ -1,86 +1,52 @@
 [
   {
-    "name": "Portfolio Website",
+    "name": "Personal Portfolio Website",
     "description": "My personal portfolio as Informatic Engineering",
-    "fullDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi explicabo, natus quo placeat tempora, cumque in incidunt debitis vel consequatur amet molestias veritatis quia quisquam praesentium, velit harum dignissimos! Numquam?",
-    "projectUrl": "https://github.com/catc0de1/example",
+    "fullDescription": "Personal portfolio website showcasing my projects and skills as a developer. Built with Svelte for performance and a modern website.",
+    "projectUrl": "https://github.com/catc0de1/svelte-portfolio-web",
+    "productUrl": "https://portfolio.izuli.my.id/",
     "field": "Website",
     "status": "COMPLETED",
     "techStack": [
-      { "name": "react" },
+      { "name": "svelte" },
       { "name": "tailwind" },
       { "name": "vite" },
       { "name": "ts" }
     ],
-    "thumbnailImage": "portfolite1.webp",
-    "thumbnailImageAlt": "Start page of my portfolio website",
+    "thumbnailImage": "personal-portfolio-web.webp",
+    "thumbnailImageAlt": "Hero section of personal portfolio website",
     "modalImages": [
       {
-        "fileName": "portfolite1.webp",
-        "alt": "Portfolio web preview of hero section"
-      },
-      { 
-        "fileName": "portfolite2.webp",
-        "alt": "Portfolio web preview of review section"
-      }
-    ]
-  },
-  {
-    "name": "Discord",
-    "description": "Directory Listing App, show all best point in Surabaya",
-    "fullDescription": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus enim minima nulla, quo voluptatibus repellat maxime dolor culpa expedita quam! \n \n - Lorem ipsum dolor \n - Lorem ipsum \n - Lorem ipsum dolor sit amet",
-    "productUrl": "https://example.com",
-    "field": "Cross Platform App",
-    "status": "COMPLETED",
-    "techStack": [
-      { "name": "electron" },
-      { "name": "react" },
-      { "name": "mongodb" },
-      { "name": "redis" },
-      { "name": "rust" },
-      { "name": "cpp" },
-      { "name": "py" },
-      { "name": "ts" }
-    ],
-    "thumbnailImage": "discord.jpeg",
-    "thumbnailImageAlt": "Official Discord App Logo",
-    "modalImages": [
-      {
-        "fileName": "discord1.jpeg",
-        "alt": "Discord logo"
-      },
-      { 
-        "fileName": "discord2.jpeg"
-      },
-      { 
-        "fileName": "discord3.jpeg"
+        "fileName": "personal-portfolio-web.webp",
+        "alt": "Hero section of personal portfolio website"
       }
     ]
   },
   {
     "name": "Email API Server",
     "description": "Prortype of SMTP Email API Server",
-    "fullDescription": [
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus enim molestiae assumenda laborum! Amet saepe quidem maiores asperiores nihil quae?",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, aliquid.",
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis suscipit, praesentium quae voluptatem illo molestias?",
-      "Lorem ipsum dolor sit amet.",
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, fuga!",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, eum?",
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde alias repudiandae quia.",
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, ipsa."
-    ],
-    "field": "Website",
+    "fullDescription": "A lightweight Express-based API server written in TypeScript for sending emails via Gmail. This API accepts JSON as input and sends an email to a predefined Gmail account. It responds with either a success or failure status.",
+    "field": "API",
     "status": "COMPLETED",
+    "projectUrl": "https://github.com/catc0de1/express-smtp-api",
+    "thumbnailImage": "email-api-server.png",
+    "thumbnailImageAlt": "Preview of email HTML",
     "techStack": [
       { "name": "express" },
       { "name": "hbs" },
       { "name": "ts" }
+    ],
+    "modalImages": [
+      {
+        "fileName": "email-api-server.png",
+        "alt": "Preview of email HTML"
+      }
     ]
   },
   {
     "name": "GitHub Portfolio Template",
     "description": "Open Source GitHub portfolio template, ready to use and no need coding",
+    "fullDescription": "An open-source template for building a GitHub Portfolio website. It’s designed to showcase your projects, repositories, and even sub-repos or organizations that don’t appear properly on your GitHub profile. You can use it easily with a simple JSON file, no coding required! Of course, you can still customize the UI/UX if you’d like. This website is recommended to be deployed on GitHub Pages.",
     "projectUrl": "https://github.com/catc0de1/github-portfolio-api-template",
     "productUrl": "https://example.com",
     "field": "Open Source Template",

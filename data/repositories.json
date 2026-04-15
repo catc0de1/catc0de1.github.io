@@ -1,12 +1,27 @@
 [
   {
-    "repoName": "My Other Repo",
-    "repoDesc": "This is my other repo. The content is specialized field",
-    "repoUrl": "https://github.com/reponame"
+    "repoName": "Universitas Negeri Surabaya",
+    "repoDesc": "My documentation task in Universitas Negeri Surabaya as informatic engineering bachelor",
+    "repoUrl": "https://github.com/unesa-iyan165"
   },
   {
-    "repoName": "Organization Repo Example",
-    "repoDesc": "This repo is from an organization.",
-    "repoUrl": "https://github.com/yourorg/reponame"
+    "repoName": "Z Labs 01",
+    "repoDesc": "Focused on experiment vanilla language, build a framework, or unique apps",
+    "repoUrl": "https://github.com/z-labs-01"
+  },
+  {
+    "repoName": "Z Labs 02",
+    "repoDesc": "Focused on learning and experiment with block chain (web3) using sui and move",
+    "repoUrl": "https://github.com/z-labs-02"
+  },
+  {
+    "repoName": "Learn with Z",
+    "repoDesc": "My course to learn some programming or tools",
+    "repoUrl": "https://github.com/learn-with-z"
+  },
+  {
+    "repoName": "GameDev",
+    "repoDesc": "My game projects with unity or other tools",
+    "repoUrl": "https://github.com/gamedev-with-z"
   }
 ]
