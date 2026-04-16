@@ -1,21 +1,17 @@
 {
-  "githubUsername": "catc0de1",
-  "githubUrl": "https://github.com/catc0de1",
-  "webTitle": "GitHub Portfolio - catc0de1",
-  "title": "Hi, I'm catc0de1",
+  "githubUsername": "iyanarmanda",
+  "githubUrl": "https://github.com/iyanarmanda",
+  "webTitle": "GitHub Portfolio - Iyan Armanda",
+  "title": "Hi, I'm Iyan Z Armanda",
   "subtitle": "I'm an Informatic Engineer As Fullstack Software Developer",
   "socialMedia": [
     {
       "name": "ig",
-      "url": "https://your_ig"
+      "url": "https://www.instagram.com/iyan_armanda"
     },
     {
       "name": "linkedin",
-      "url": "https://your_in"
-    },
-    {
-      "name": "dc",
-      "url": "https://your_dc"
+      "url": "https://www.linkedin.com/in/iyan-zuli-armanda-8a1383296/"
     }
   ]
 }

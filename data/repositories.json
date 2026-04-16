@@ -1,27 +1,22 @@
 [
   {
-    "repoName": "Universitas Negeri Surabaya",
+    "repoName": "unesa-iyan165",
     "repoDesc": "My documentation task in Universitas Negeri Surabaya as informatic engineering bachelor",
     "repoUrl": "https://github.com/unesa-iyan165"
   },
   {
-    "repoName": "Z Labs 01",
-    "repoDesc": "Focused on experiment vanilla language, build a framework, or unique apps",
-    "repoUrl": "https://github.com/z-labs-01"
+    "repoName": "iyanarmanda-lab1",
+    "repoDesc": "focused on experiment technologies, or unique apps",
+    "repoUrl": "https://github.com/iyanarmanda-lab1"
   },
   {
-    "repoName": "Z Labs 02",
-    "repoDesc": "Focused on learning and experiment with block chain (web3) using sui and move",
-    "repoUrl": "https://github.com/z-labs-02"
+    "repoName": "iyanarmanda-archive",
+    "repoDesc": "archived projects or prototypes",
+    "repoUrl": "https://github.com/iyanarmanda-archive"
   },
   {
-    "repoName": "Learn with Z",
-    "repoDesc": "My course to learn some programming or tools",
-    "repoUrl": "https://github.com/learn-with-z"
-  },
-  {
-    "repoName": "GameDev",
-    "repoDesc": "My game projects with unity or other tools",
-    "repoUrl": "https://github.com/gamedev-with-z"
+    "repoName": "iyanarmanda-learn",
+    "repoDesc": "my course or project to learn some programming or tools",
+    "repoUrl": "https://github.com/iyanarmanda-learn "
   }
 ]

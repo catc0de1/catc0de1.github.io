@@ -8,6 +8,6 @@
     "test": "node ./scripts/test.js"
   },
   "keywords": [],
-  "author": "catc0de1",
+  "author": "iyanarmanda",
   "license": "MIT"
 }

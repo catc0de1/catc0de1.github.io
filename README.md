@@ -10,11 +10,11 @@
 <h1 align="center">Github Portfolio API Template</h1>
 
 <p align="center">
-   <a href="https://catc0de1.github.io/github-portfolio-template">View Demo</a>
+   <a href="https://iyanarmanda.github.io/github-portfolio-template">View Demo</a>
    &middot;
-   <a href="https://github.com/catc0de1/github-portfolio-template/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+   <a href="https://github.com/iyanarmanda/github-portfolio-template/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
    &middot;
-   <a href="https://github.com/catc0de1/github-portfolio-template/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+   <a href="https://github.com/iyanarmanda/github-portfolio-template/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
    <br/>
 </p>
 
@@ -144,12 +144,12 @@ There's a different way to install this template:
 
    GitHub:
    ```
-   https://github.com/CatC0de1/github-portfolio-api-template
+   https://github.com/iyanarmanda/github-portfolio-api-template
    ```
 
    Clone with:
    ```bash
-   git clone https://github.com/CatC0de1/github-portfolio-api-template.git github-portfolio
+   git clone https://github.com/iyanarmanda/github-portfolio-api-template.git github-portfolio
    cd github-portfolio
    ```
 
@@ -204,9 +204,9 @@ There's a different way to install this template:
    Example:
    ```JSON
    {
-      "githubUsername": "catc0de1",
-      "githubUrl": "https://github.com/catc0de1",
-      "webTitle": "GitHub Portfolio - catc0de1",
+      "githubUsername": "iyanarmanda",
+      "githubUrl": "https://github.com/iyanarmanda",
+      "webTitle": "GitHub Portfolio - iyanarmanda",
       "title": "My GitHub Portfolio",
       "subtitle": "A showcase of my repositories and creations",
       "lightThemeColor": "#0000ff",
@@ -277,7 +277,7 @@ There's a different way to install this template:
          "name": "Portfolio Website",
          "description": "My personal portfolio as Informatic Engineering",
          "fullDescription": "This website show all my works as Informatic Engineering and it build perfectly that reference how skilled I am",
-         "projectUrl": "https://github.com/catc0de1/portfolio",
+         "projectUrl": "https://github.com/iyanarmanda/portfolio",
          "productUrl": "https://iyan-zuli-armanda.netlify.app",
          "field": "Website",
          "status": "COMPLETED",
@@ -306,7 +306,7 @@ There's a different way to install this template:
       {
          "name": "Surabaya BestPoint",
          "description": "Directory Listing App, show all best point in Surabaya",
-         "projectUrl": "https://github.com/catc0de1/SurabayaBestPoint",
+         "projectUrl": "https://github.com/iyanarmanda/SurabayaBestPoint",
          "field": "Website",
          "status": "ON PROGRESS",
          "techStack": [
@@ -448,7 +448,7 @@ There's a different way to install this template:
 
 ## License
 
-This template is [MIT LICENSED](https://github.com/CatC0de1/github-portfolio-api-template?tab=MIT-1-ov-file)
+This template is [MIT LICENSED](https://github.com/iyanarmanda/github-portfolio-api-template?tab=MIT-1-ov-file)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -456,14 +456,14 @@ This template is [MIT LICENSED](https://github.com/CatC0de1/github-portfolio-api
 
 ## Contact
 
-This github-portfolio-api-template is created by **catc0de1**.
+This github-portfolio-api-template is created by **iyanarmanda**.
 
 Feel free to connect:
-- **GitHub**: [catc0de1](https://github.com/catc0de1)
+- **GitHub**: [iyanarmanda](https://github.com/iyanarmanda)
 - **Instagram**: [@iyan_zul1](https://www.instagram.com/iyan_zul1/)
 - **Linkedin**: [iyan-zuli-armanda](https://www.linkedin.com/in/iyan-zuli-armanda-8a1383296/)
 
-Template link: [https://github.com/catc0de1/github-portfolio-template](https://github.com/catc0de1/github-portfolio-template)
+Template link: [https://github.com/iyanarmanda/github-portfolio-template](https://github.com/iyanarmanda/github-portfolio-template)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -474,16 +474,16 @@ Template link: [https://github.com/catc0de1/github-portfolio-template](https://g
 Please leave a star and it free to contribute.
 Hope you enjoy it ^-^
 
-[contributors-shield]: https://img.shields.io/github/contributors/catc0de1/github-portfolio-template.svg?style=for-the-badge
-[contributors-url]: https://github.com/catc0de1/github-portfolio-template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/catc0de1/github-portfolio-template.svg?style=for-the-badge
-[forks-url]: https://github.com/catc0de1/github-portfolio-template/network/members
-[stars-shield]: https://img.shields.io/github/stars/catc0de1/github-portfolio-template.svg?style=for-the-badge
-[stars-url]: https://github.com/catc0de1/github-portfolio-template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/catc0de1/github-portfolio-template.svg?style=for-the-badge
-[issues-url]: https://github.com/catc0de1/github-portfolio-template/issues
-[license-shield]: https://img.shields.io/github/license/catc0de1/github-portfolio-template.svg?style=for-the-badge
-[license-url]: https://github.com/catc0de1/github-portfolio-template/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/iyanarmanda/github-portfolio-template.svg?style=for-the-badge
+[contributors-url]: https://github.com/iyanarmanda/github-portfolio-template/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/iyanarmanda/github-portfolio-template.svg?style=for-the-badge
+[forks-url]: https://github.com/iyanarmanda/github-portfolio-template/network/members
+[stars-shield]: https://img.shields.io/github/stars/iyanarmanda/github-portfolio-template.svg?style=for-the-badge
+[stars-url]: https://github.com/iyanarmanda/github-portfolio-template/stargazers
+[issues-shield]: https://img.shields.io/github/issues/iyanarmanda/github-portfolio-template.svg?style=for-the-badge
+[issues-url]: https://github.com/iyanarmanda/github-portfolio-template/issues
+[license-shield]: https://img.shields.io/github/license/iyanarmanda/github-portfolio-template.svg?style=for-the-badge
+[license-url]: https://github.com/iyanarmanda/github-portfolio-template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/iyan-zuli-armanda-8a1383296/
 
